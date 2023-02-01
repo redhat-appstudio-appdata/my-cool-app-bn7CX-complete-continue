@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: my-cool-app-devfile-sample-sdhe-sample
+  namespace: mjobanek-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:5c7a4d0106b0f59846ad17327013113e67fdd71e48b9d23d5fa3835992f38097
+        name: container-image
+        resources: {}
+status: {}
