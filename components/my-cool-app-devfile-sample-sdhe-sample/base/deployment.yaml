@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: my-cool-app-devfile-sample-sdhe-sample
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:mjobanek-tenant-my-cool-app-devfile-sample-sdhe-sample
+      - image: quay.io/redhat-appstudio/user-workload@sha256:5c7a4d0106b0f59846ad17327013113e67fdd71e48b9d23d5fa3835992f38097
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
